@@ -13,9 +13,8 @@ app.get("/", async function (req, res) {
   res.render("results", { results: results });
 });
 
-app.get("/testTwo", async function (req, res) {
+app.get("/test-two", async function (req, res) {
   const resp = await handleTestTwo();
-  console.log(resp);
   res.send(resp.result);
 });
 
